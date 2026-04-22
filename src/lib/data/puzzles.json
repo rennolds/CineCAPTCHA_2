@@ -1,34 +1,532 @@
 {
+  "kubrick-directed": {
+    "id": "kubrick-directed",
+    "prompt_text": "Select all movies directed by Stanley Kubrick",
+    "category": "director",
+    "difficulty": 2,
+    "images": [
+      {
+        "url": "https://image.tmdb.org/t/p/w342/uAR0AWqhQL1hQa69UDEbb2rE5Wx.jpg",
+        "label": "The Shining",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/ve72VxNqjGM69Uky4WTo2bK6rfq.jpg",
+        "label": "2001: A Space Odyssey",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/4sHeTAp65WrSSuc05nRBKddhBxO.jpg",
+        "label": "A Clockwork Orange",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+        "label": "The Godfather",
+        "is_correct": false
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/kMKyx1k8hWWscYFnPbnxxN4Eqo4.jpg",
+        "label": "Full Metal Jacket",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/vQWk5YBFWF4bZaofAbv0tShwBvQ.jpg",
+        "label": "Pulp Fiction",
+        "is_correct": false
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/6x7MzQ6BOMlRzam1StcmPO9v61g.jpg",
+        "label": "Dr. Strangelove",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg",
+        "label": "Schindler's List",
+        "is_correct": false
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/znfLskGQnXYB2xcOGM9eInRHPAV.jpg",
+        "label": "Barry Lyndon",
+        "is_correct": true
+      }
+    ]
+  },
+  "best-picture-winners": {
+    "id": "best-picture-winners",
+    "prompt_text": "Select all films that won the Oscar for Best Picture",
+    "category": "award",
+    "difficulty": 2,
+    "images": [
+      {
+        "url": "https://image.tmdb.org/t/p/w342/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+        "label": "The Godfather",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+        "label": "Parasite",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/vQWk5YBFWF4bZaofAbv0tShwBvQ.jpg",
+        "label": "Pulp Fiction",
+        "is_correct": false
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/6d5XOczc226jECq0LIX0siKtgHR.jpg",
+        "label": "No Country for Old Men",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/uAR0AWqhQL1hQa69UDEbb2rE5Wx.jpg",
+        "label": "The Shining",
+        "is_correct": false
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/BzVjmm8l23rPsijLiNLUzuQtyd.jpg",
+        "label": "CODA",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/kMKyx1k8hWWscYFnPbnxxN4Eqo4.jpg",
+        "label": "Full Metal Jacket",
+        "is_correct": false
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/qLnfEmPrDjJfPyyddLJPkXmshkp.jpg",
+        "label": "Moonlight",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/ve72VxNqjGM69Uky4WTo2bK6rfq.jpg",
+        "label": "2001: A Space Odyssey",
+        "is_correct": false
+      }
+    ]
+  },
   "nolan-directed": {
     "id": "nolan-directed",
-    "prompt": "Select the films directed by Christopher Nolan",
-    "author": "seed",
+    "prompt_text": "Select all movies directed by Christopher Nolan",
+    "category": "director",
+    "difficulty": 1,
     "images": [
-      { "url": "https://image.tmdb.org/t/p/w342/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg", "title": "Inception", "correct": true },
-      { "url": "https://image.tmdb.org/t/p/w342/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg", "title": "The Dark Knight", "correct": true },
-      { "url": "https://image.tmdb.org/t/p/w342/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg", "title": "Interstellar", "correct": true },
-      { "url": "https://image.tmdb.org/t/p/w342/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg", "title": "Tenet", "correct": true },
-      { "url": "https://image.tmdb.org/t/p/w342/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg", "title": "The Godfather", "correct": false },
-      { "url": "https://image.tmdb.org/t/p/w342/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg", "title": "Pulp Fiction", "correct": false },
-      { "url": "https://image.tmdb.org/t/p/w342/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg", "title": "The Shining", "correct": false },
-      { "url": "https://image.tmdb.org/t/p/w342/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg", "title": "Fight Club", "correct": false },
-      { "url": "https://image.tmdb.org/t/p/w342/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg", "title": "La La Land", "correct": false }
+      {
+        "url": "https://image.tmdb.org/t/p/w342/xlaY2zyzMfkhk0HSC5VUwzoZPU1.jpg",
+        "label": "Inception",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+        "label": "The Dark Knight",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
+        "label": "Interstellar",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/vQWk5YBFWF4bZaofAbv0tShwBvQ.jpg",
+        "label": "Pulp Fiction",
+        "is_correct": false
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+        "label": "Oppenheimer",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+        "label": "The Godfather",
+        "is_correct": false
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/fKTPH2WvH8nHTXeBYBVhawtRqtR.jpg",
+        "label": "Memento",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/uAR0AWqhQL1hQa69UDEbb2rE5Wx.jpg",
+        "label": "The Shining",
+        "is_correct": false
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/b4Oe15CGLL61Ped0RAS9JpqdmCt.jpg",
+        "label": "Dunkirk",
+        "is_correct": true
+      }
+    ]
+  },
+  "sci-fi": {
+    "id": "sci-fi",
+    "prompt_text": "Select all Science Fiction films",
+    "category": "genre",
+    "difficulty": 1,
+    "images": [
+      {
+        "url": "https://image.tmdb.org/t/p/w342/ve72VxNqjGM69Uky4WTo2bK6rfq.jpg",
+        "label": "2001: A Space Odyssey",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/xlaY2zyzMfkhk0HSC5VUwzoZPU1.jpg",
+        "label": "Inception",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
+        "label": "Blade Runner 2049",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+        "label": "The Godfather",
+        "is_correct": false
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/aOIuZAjPaRIE6CMzbazvcHuHXDc.jpg",
+        "label": "The Matrix",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/4sHeTAp65WrSSuc05nRBKddhBxO.jpg",
+        "label": "A Clockwork Orange",
+        "is_correct": false
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/pEzNVQfdzYDzVK0XqxERIw2x2se.jpg",
+        "label": "Arrival",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+        "label": "Parasite",
+        "is_correct": false
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
+        "label": "Interstellar",
+        "is_correct": true
+      }
+    ]
+  },
+  "streep-starring": {
+    "id": "streep-starring",
+    "prompt_text": "Select all movies starring Meryl Streep",
+    "category": "actor",
+    "difficulty": 2,
+    "images": [
+      {
+        "url": "https://image.tmdb.org/t/p/w342/3CUP5V5SWfHSK4qvkZF7lMNyugY.jpg",
+        "label": "Kramer vs. Kramer",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/8912AsVuS7Sj915apArUFbv6F9L.jpg",
+        "label": "The Devil Wears Prada",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/4sHeTAp65WrSSuc05nRBKddhBxO.jpg",
+        "label": "A Clockwork Orange",
+        "is_correct": false
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/6d5XOczc226jECq0LIX0siKtgHR.jpg",
+        "label": "No Country for Old Men",
+        "is_correct": false
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/rZDPbPTFwuKgr5b9jixGFNYkGYt.jpg",
+        "label": "Sophie's Choice",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/aOIuZAjPaRIE6CMzbazvcHuHXDc.jpg",
+        "label": "The Matrix",
+        "is_correct": false
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/fx7wpKXOht7WOkeOslvErbrf69Q.jpg",
+        "label": "The Iron Lady",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
+        "label": "Interstellar",
+        "is_correct": false
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/zdUA4FNHbXPadzVOJiU0Rgn6cHR.jpg",
+        "label": "Mamma Mia!",
+        "is_correct": true
+      }
+    ]
+  },
+  "horror": {
+    "id": "horror",
+    "prompt_text": "Select all Horror films",
+    "category": "genre",
+    "difficulty": 1,
+    "images": [
+      {
+        "url": "https://image.tmdb.org/t/p/w342/uAR0AWqhQL1hQa69UDEbb2rE5Wx.jpg",
+        "label": "The Shining",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/hjlZSXM86wJrfCv5VKfR5DI2VeU.jpg",
+        "label": "Hereditary",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/xlaY2zyzMfkhk0HSC5VUwzoZPU1.jpg",
+        "label": "Inception",
+        "is_correct": false
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+        "label": "The Godfather",
+        "is_correct": false
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/mE24wUCfjK8AoBBjaMjho7Rczr7.jpg",
+        "label": "Get Out",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/ve72VxNqjGM69Uky4WTo2bK6rfq.jpg",
+        "label": "2001: A Space Odyssey",
+        "is_correct": false
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/7LEI8ulZzO5gy9Ww2NVCrKmHeDZ.jpg",
+        "label": "Midsommar",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+        "label": "The Dark Knight",
+        "is_correct": false
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/nAU74GmpUk7t5iklEp3bufwDq4n.jpg",
+        "label": "A Quiet Place",
+        "is_correct": true
+      }
+    ]
+  },
+  "coens-directed": {
+    "id": "coens-directed",
+    "prompt_text": "Select all films directed by the Coen Brothers",
+    "category": "director",
+    "difficulty": 2,
+    "images": [
+      {
+        "url": "https://image.tmdb.org/t/p/w342/6d5XOczc226jECq0LIX0siKtgHR.jpg",
+        "label": "No Country for Old Men",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/rt7cpEr1uP6RTZykBFhBTcRaKvG.jpg",
+        "label": "Fargo",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/xlaY2zyzMfkhk0HSC5VUwzoZPU1.jpg",
+        "label": "Inception",
+        "is_correct": false
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/3bv6WAp6BSxxYvB5ozKFUYuRA8C.jpg",
+        "label": "The Big Lebowski",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+        "label": "The Dark Knight",
+        "is_correct": false
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/tCrB8pcjadZjsDk7rleGJaIv78k.jpg",
+        "label": "True Grit",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+        "label": "The Godfather",
+        "is_correct": false
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/jdwSkQu3XirmX18MNj8CqFWsCk.jpg",
+        "label": "Burn After Reading",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
+        "label": "Interstellar",
+        "is_correct": false
+      }
     ]
   },
   "hanks-starring": {
     "id": "hanks-starring",
-    "prompt": "Select the films starring Tom Hanks",
-    "author": "seed",
+    "prompt_text": "Select all movies starring Tom Hanks",
+    "category": "actor",
+    "difficulty": 1,
     "images": [
-      { "url": "https://image.tmdb.org/t/p/w342/placeholder.jpg", "title": "Forrest Gump", "correct": true },
-      { "url": "https://image.tmdb.org/t/p/w342/placeholder.jpg", "title": "Cast Away", "correct": true },
-      { "url": "https://image.tmdb.org/t/p/w342/placeholder.jpg", "title": "Saving Private Ryan", "correct": true },
-      { "url": "https://image.tmdb.org/t/p/w342/placeholder.jpg", "title": "Toy Story", "correct": true },
-      { "url": "https://image.tmdb.org/t/p/w342/placeholder.jpg", "title": "The Matrix", "correct": false },
-      { "url": "https://image.tmdb.org/t/p/w342/placeholder.jpg", "title": "Gladiator", "correct": false },
-      { "url": "https://image.tmdb.org/t/p/w342/placeholder.jpg", "title": "Titanic", "correct": false },
-      { "url": "https://image.tmdb.org/t/p/w342/placeholder.jpg", "title": "Avatar", "correct": false },
-      { "url": "https://image.tmdb.org/t/p/w342/placeholder.jpg", "title": "Jaws", "correct": false }
+      {
+        "url": "https://image.tmdb.org/t/p/w342/saHP97rTPS5eLmrLQEcANmKrsFl.jpg",
+        "label": "Forrest Gump",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
+        "label": "Blade Runner 2049",
+        "is_correct": false
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/7lLJgKnAicAcR5UEuo8xhSMj18w.jpg",
+        "label": "Cast Away",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+        "label": "Parasite",
+        "is_correct": false
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/tFe5Yoo5zT495okA49bq1vPPkiV.jpg",
+        "label": "Philadelphia",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/hjlZSXM86wJrfCv5VKfR5DI2VeU.jpg",
+        "label": "Hereditary",
+        "is_correct": false
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/uqx37cS8cpHg8U35f9U5IBlrCV3.jpg",
+        "label": "Saving Private Ryan",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/7LEI8ulZzO5gy9Ww2NVCrKmHeDZ.jpg",
+        "label": "Midsommar",
+        "is_correct": false
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/cPB3ZMM4UdsSAhNdS4c7ps5nypY.jpg",
+        "label": "The Terminal",
+        "is_correct": true
+      }
+    ]
+  },
+  "iconic-villains": {
+    "id": "iconic-villains",
+    "prompt_text": "Select all films featuring an iconic movie villain",
+    "category": "character",
+    "difficulty": 3,
+    "images": [
+      {
+        "url": "https://image.tmdb.org/t/p/w342/4sHeTAp65WrSSuc05nRBKddhBxO.jpg",
+        "label": "A Clockwork Orange",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+        "label": "The Dark Knight",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/saHP97rTPS5eLmrLQEcANmKrsFl.jpg",
+        "label": "Forrest Gump",
+        "is_correct": false
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/uAR0AWqhQL1hQa69UDEbb2rE5Wx.jpg",
+        "label": "The Shining",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/7lLJgKnAicAcR5UEuo8xhSMj18w.jpg",
+        "label": "Cast Away",
+        "is_correct": false
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/6d5XOczc226jECq0LIX0siKtgHR.jpg",
+        "label": "No Country for Old Men",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
+        "label": "Interstellar",
+        "is_correct": false
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+        "label": "The Godfather",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/uS9m8OBk1A8eM9I042bx8XXpqAq.jpg",
+        "label": "Silence of the Lambs",
+        "is_correct": true
+      }
+    ]
+  },
+  "animated": {
+    "id": "animated",
+    "prompt_text": "Select all animated feature films",
+    "category": "genre",
+    "difficulty": 1,
+    "images": [
+      {
+        "url": "https://image.tmdb.org/t/p/w342/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg",
+        "label": "Spirited Away",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg",
+        "label": "Spider-Man: Into the Spider-Verse",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+        "label": "The Godfather",
+        "is_correct": false
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/xlaY2zyzMfkhk0HSC5VUwzoZPU1.jpg",
+        "label": "Inception",
+        "is_correct": false
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/uXDfjJbdP4ijW5hWSBrPrlKpxab.jpg",
+        "label": "Toy Story",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+        "label": "Parasite",
+        "is_correct": false
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/pJfm3EggGLZToce08Obf7HQHXrP.jpg",
+        "label": "WALL-E",
+        "is_correct": true
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+        "label": "The Dark Knight",
+        "is_correct": false
+      },
+      {
+        "url": "https://image.tmdb.org/t/p/w342/cMYCDADoLKLbB83g4WnJegaZimC.jpg",
+        "label": "Princess Mononoke",
+        "is_correct": true
+      }
     ]
   }
 }

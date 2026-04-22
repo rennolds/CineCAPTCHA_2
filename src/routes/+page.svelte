@@ -1,87 +1,120 @@
 <script>
-	import { game } from "$lib/stores/game.svelte.js";
-	import puzzles from "$lib/data/puzzles.json";
-	import schedule from "$lib/data/daily_schedule.json";
+	import Logo from "$lib/components/Logo.svelte";
+	import RobotCheckbox from "$lib/components/RobotCheckbox.svelte";
+	import PosterBackdrop from "$lib/components/PosterBackdrop.svelte";
+	import { getTodayString, formatDate, getPuzzleNumber } from "$lib/utils/game.js";
 
-	const today = new Date().toISOString().slice(0, 10);
-	const todayIds = schedule[today] ?? [];
-	const todayPuzzles = todayIds.map((id) => puzzles[id]).filter(Boolean);
-	const current = todayPuzzles[game.round - 1];
+	const today = getTodayString();
+	const puzzleNum = getPuzzleNumber(today);
+	const dateLabel = formatDate(new Date(today + "T12:00:00"));
 </script>
 
-<main class="shell">
-	<h1>CineCAPTCHA</h1>
-	<p class="status">
-		Round {game.round} · Lives {game.lives}
-	</p>
+<main class="page">
+	<PosterBackdrop />
 
-	{#if current}
-		<p class="prompt">{current.prompt}</p>
-		<div class="grid">
-			{#each current.images as img, i}
-				<button
-					class="tile"
-					class:selected={game.selections.has(i)}
-					onclick={() => game.toggleSelection(i)}
-				>
-					<img src={img.url} alt={img.title} />
-				</button>
-			{/each}
+	<div class="content">
+		<div class="logo-wrap">
+			<Logo size="lg" />
 		</div>
-	{:else}
-		<p>No puzzles scheduled for {today}.</p>
-	{/if}
+
+		<div class="title">
+			<p class="date">{dateLabel}</p>
+			<p class="byline">
+				No. {String(puzzleNum).padStart(3, "0")} · Edited by
+				<span>Paul Pursifull</span>
+			</p>
+		</div>
+
+		<p class="tagline">
+			A daily movie trivia game disguised as a reCAPTCHA.
+			<br />
+			<span>Five rounds. Five lives. One shot per day.</span>
+		</p>
+
+		<RobotCheckbox />
+
+		<nav class="nav">
+			<a href="/play">Gallery</a>
+			<a href="/create">Create</a>
+		</nav>
+	</div>
 </main>
 
 <style>
-	.shell {
-		max-width: 480px;
-		margin: 2rem auto;
-		padding: 1rem;
-		text-align: center;
-	}
-
-	h1 {
-		font-size: 2rem;
-		margin-bottom: 0.25rem;
-	}
-
-	.status {
-		color: #555;
-		font-variant-numeric: tabular-nums;
-	}
-
-	.prompt {
-		margin: 1.5rem 0 1rem;
-		font-weight: 600;
-	}
-
-	.grid {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 4px;
-		background: #ddd;
-		padding: 4px;
-		border-radius: 6px;
-	}
-
-	.tile {
-		padding: 0;
-		border: 0;
-		background: #fff;
-		aspect-ratio: 2 / 3;
-		overflow: hidden;
+	.page {
 		position: relative;
+		min-height: 100vh;
+		background: #1a1a2e;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 40px 16px 48px;
+		overflow: hidden;
 	}
 
-	.tile img {
+	.content {
+		position: relative;
+		z-index: 10;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		width: 100%;
-		height: 100%;
-		object-fit: cover;
 	}
 
-	.tile.selected {
-		outline: 3px solid #1a73e8;
-		outline-offset: -3px;
+	.logo-wrap {
+		margin-bottom: 24px;
+	}
+
+	.title {
+		text-align: center;
+		margin-bottom: 32px;
+	}
+	.date {
+		font-size: 22px;
+		font-weight: 700;
+		color: #fff;
+		letter-spacing: -0.02em;
+		margin: 0;
+	}
+	@media (min-width: 640px) {
+		.date {
+			font-size: 26px;
+		}
+	}
+	.byline {
+		font-size: 13px;
+		color: #888;
+		margin: 8px 0 0;
+	}
+	.byline span {
+		color: #bbb;
+		font-weight: 500;
+	}
+
+	.tagline {
+		font-size: 13px;
+		color: #bbb;
+		max-width: 340px;
+		text-align: center;
+		line-height: 1.6;
+		margin: 0 0 24px;
+	}
+	.tagline span {
+		color: #888;
+	}
+
+	.nav {
+		margin-top: 40px;
+		display: flex;
+		align-items: center;
+		gap: 24px;
+		font-size: 12px;
+		color: #888;
+	}
+	.nav a {
+		transition: color 0.15s;
+	}
+	.nav a:hover {
+		color: #fff;
 	}
 </style>
